@@ -1,0 +1,24 @@
+val = input()
+val = int(val)
+incre = 0
+
+while incre < val:
+  newSeq = ""
+  numOfBases = input()
+  
+  sequence = input()
+  for c in sequence:
+    if c == "A":
+      newSeq += "T"
+    elif c == "T":
+      newSeq += "A"
+    elif c == "G":
+      newSeq += "C"
+    elif c == "C":
+      newSeq += "G"
+    else:
+      newSeq = "Error RNA nucleobases found!"
+      break
+  print(newSeq)
+  incre += 1
+  
